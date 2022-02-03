@@ -29,7 +29,10 @@ create_mosaic(
 ```
 
 ### Sample: 2001: A Space Odyssey
-A still every second yields about 9,000 images. ~5,000 unique stills are matched and used below. This took over 4 hours to render on an intel i7 CPU.
+A still every second yields about 9,000 images. ~5,000 unique stills are matched and used below. This mosaic took over 4 hours to render on an intel i7 CPU.
+
+------------
+
 ![Sample](doc/2001e.jpeg)
 
 
