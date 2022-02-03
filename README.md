@@ -1,15 +1,14 @@
 # mosaic
 
-This utility can be used to generate [photo-mosaic](http://en.wikipedia.org/wiki/Photographic_mosaic) images. There are several mosaic libraries.
+This utility can be used to generate [photo-mosaic](http://en.wikipedia.org/wiki/Photographic_mosaic) images. 
 
 There is **no cheating** with semi-transparent overlays, tile tinting, or repeating images (by default).
 
 This script is focused on **maximum accuracy** (using scikit's Mean Squared Error). This is a pixel by pixel comparison to produce a best match. Other libraries simplify this by only comparing against a limited (averaged, antialiased) number of pixel from the original sector, or just compare against the histograms. Producing large, highly detailed mosaics takes a lot of time!
 
-Using the jupyter notebook you can specify the film you would like to extract images from and use those images to generate the photo-mosaic. 
+To make a mosaic of a film, specify the path to the file. Using the jupyter notebook you can specify the film you would like to extract images from and use those images to generate the photo-mosaic. 
 
-This repository is an updated version of [dvdtho/python-photo-mosaic](https://github.com/dvdtho/python-photo-mosaic) and was created since the repository python-photo-mosaic no longer works with the current version of scikit-image.
-
+This repository is an updated version of [dvdtho/python-photo-mosaic](https://github.com/dvdtho/python-photo-mosaic) and was created since the repository python-photo-mosaic no longer works with the current version of scikit-image. 
 
 
 **Prerequisites**
@@ -29,23 +28,14 @@ create_mosaic(
 ) 
 ```
 
-### Sample: Sean Connery made of screenshots from his Bond films
-Sean starred in 7 Bond films. A still every 3 seconds yields about 10,000 images. 2,500 unique stills are matched and used below:
+### Sample: 2001: A Space Odyssey
+A still every second yields about 9,000 images. ~5,000 unique stills are matched and used below:
 ![Sample](doc/2001e.jpeg)
 
 
 # Image Aspect Crop with Focus (Bonus Feature)
 Ability crop an image to the desired perspective at the maximum size available. Centerpoint can be provided to focus the crop to one side or another. 
 
-For example, if we are cropping the left and right sides and the left side is more interesting than the right side:
-```python   
-from PIL import Image
-img = aspect_crop_to_extent(
-        img=Image.open("/path/to/image"), 
-        target_aspect=1, # width / float(height) -- 1 is square
-        centerpoint=(0,0), # (width, height) -- we will focus on the left, and crop from the right
-)
-```
 
 ------------
 Changed from original project (https://github.com/codebox/mosaic):  
