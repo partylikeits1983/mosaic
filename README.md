@@ -35,9 +35,7 @@ A still every second yields about 9,000 images. ~5,000 unique stills are matched
 
 ![Sample](doc/2001e.jpeg)
 
-
-# Image Aspect Crop with Focus (Bonus Feature)
-Ability crop an image to the desired perspective at the maximum size available. Centerpoint can be provided to focus the crop to one side or another. 
+Feel free to contact me if you would like the highest resolution version.
 
 
 ------------
